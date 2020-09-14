@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     {% feed_meta %}
     {% seo %}
+    <div id="bg">{{ site.title | upcase }} | {% include navigation.html %}</div>
   </head>
   <body>
-    {% include navigation.html %}
+    <h1>{{ page_title }}</h1>
     {{ content }}
   </body>
 </html>

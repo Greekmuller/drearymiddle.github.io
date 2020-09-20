@@ -2,12 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title}}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     {% feed_meta %}
     {% seo %}
-    <div class="top-container"><h1 align: left; abbr title="Dreary Middle COLON The Website">Dreary Middle</h1></div>
-    <div class="header" id="myHeader"><p align: right;>{% include navigation.html %}</p></div>
+    <div class="top-container" id="logoBar">
+      <div id="siteTitle"><a href="/" style="text-decoration: none;"><h1 align: left; abbr title="Dreary Middle COLON The Website">Dreary Middle</h1></a></div>
+    </div>
+    <div class="header" id="menuHeader">
+      <p align: center;>{% include navigation.html %}</p>
+    </div>
   </head>
   <body>
     <div class="content">
@@ -18,7 +22,7 @@
   <script>
     window.onscroll = function() {myFunction()};
     
-    var header = document.getElementById("myHeader");
+    var header = document.getElementById("menuHeader");
     var sticky = header.offsetTop;
     
     function myFunction() {

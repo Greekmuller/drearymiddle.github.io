@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 2000 2000">
+<metadata>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="New" value="1"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+</metadata>
+<defs>
+<linearGradient y1="152.96" id="LinearGradient" x1="897.555" y2="900.843" x2="1569" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)">
+<stop stop-color="#d5d3d3" offset="0"/>
+<stop stop-color="#847f7f" offset="0.980211"/>
+</linearGradient>
+<linearGradient y1="458.148" id="LinearGradient_2" x1="508.455" y2="907.034" x2="1041.32" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.959922 0 0 0.959922 40.2027 32.0389)">
+<stop stop-color="#ffbc00" offset="0"/>
+<stop stop-color="#ffe200" offset="1"/>
+</linearGradient>
+<linearGradient y1="984.809" id="LinearGradient_3" x1="1021.13" y2="1547.24" x2="1703.57" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 9.05486 9.7735)">
+<stop stop-color="#ff0000" offset="0"/>
+<stop stop-color="#fe6d6d" offset="0"/>
+<stop stop-color="#ff0000" offset="1"/>
+</linearGradient>
+</defs>
+<g id="Grey Disk" vectornator:layerName="Grey Disk">
+<path d="M54.8082+1000C54.8082+477.985+477.985+54.8082+1000+54.8082C1522.02+54.8082+1945.19+477.985+1945.19+1000C1945.19+1522.02+1522.02+1945.19+1000+1945.19C477.985+1945.19+54.8082+1522.02+54.8082+1000Z" opacity="1" fill="url(#LinearGradient)"/>
+</g>
+<g id="Yellow" vectornator:layerName="Yellow">
+<path d="M391.271+1664.66C207.962+1498.65+92.8143+1258.75+92.8143+991.961C92.8143+490.867+499.031+84.6506+1000.12+84.6506C1211.01+84.6506+1405.09+156.599+1559.17+277.288" opacity="1" fill="url(#LinearGradient_2)"/>
+</g>
+<g id="Red" vectornator:layerName="Red">
+<path d="M1611.58+332.306C1794.89+498.319+1910.04+738.214+1910.04+1005C1910.04+1506.1+1503.82+1912.31+1002.73+1912.31C791.839+1912.31+597.756+1840.37+443.685+1719.68" opacity="1" fill="url(#LinearGradient_3)"/>
+</g>
+<g id="DM" vectornator:layerName="DM">
+<path d="M358.262+407.287L358.262+401.497L619.213+401.497C685.608+401.497+738.043+406.708+776.516+417.131C814.989+427.553+848.509+443.959+877.074+466.348C905.64+488.737+928.287+517.367+945.014+552.238C961.742+587.108+970.106+626.032+970.106+669.009C970.106+710.442+961.42+751.167+944.049+791.185C926.678+831.202+903.067+865.687+873.214+894.638C843.362+923.59+811.901+943.406+778.832+954.086C745.763+964.766+694.615+970.106+625.389+970.106L358.262+970.106L358.262+964.701L365.211+964.701C379.108+964.701+388.243+959.104+392.618+947.909C396.993+936.715+399.181+916.449+399.181+887.111L399.181+472.911C399.181+442.029+396.543+423.371+391.267+416.938C385.992+410.504+374.99+407.287+358.262+407.287ZM552.045+413.463L464.804+413.463L464.804+854.685C464.804+882.479+469.501+903.131+478.894+916.642C488.287+930.152+504.307+939.932+526.954+945.979C549.6+952.027+580.096+955.051+618.441+955.051C724.982+955.051+799.806+927.708+842.912+873.021C886.017+818.335+907.57+758.695+907.57+694.101C907.57+618.183+878.04+552.431+818.978+496.844C759.917+441.257+670.939+413.463+552.045+413.463Z" opacity="1" fill="#959494"/>
+<path d="M1551.99+1021.49L1638.12+1021.49L1638.12+1027.08C1609.16+1028.57+1594.68+1043.84+1594.68+1072.89C1594.68+1079.1+1595.42+1087.67+1596.91+1098.59L1654.08+1514.25C1657.54+1535.11+1661.44+1548.46+1665.77+1554.29C1670.1+1560.13+1679.07+1563.67+1692.69+1564.91L1692.69+1570.12L1569.81+1570.12L1569.81+1564.91C1585.9+1565.4+1593.94+1557.46+1593.94+1541.07C1593.94+1537.35+1593.2+1530.02+1591.71+1519.1L1536.03+1116.1L1340.02+1570.12L1336.31+1570.12L1139.19+1116.84L1083.88+1522.08C1082.89+1528.28+1082.39+1535.36+1082.39+1543.31C1082.39+1557.71+1090.68+1564.91+1107.26+1564.91L1107.26+1570.12L1023.74+1570.12L1023.74+1564.91C1036.36+1564.91+1044.47+1563.29+1048.05+1560.07C1051.64+1556.84+1054.43+1551.81+1056.41+1544.98C1058.39+1538.15+1059.87+1530.52+1060.86+1522.08L1123.23+1078.85C1113.08+1054.27+1102.93+1039.49+1092.79+1034.53C1082.64+1029.56+1072.86+1027.08+1063.46+1027.08L1063.46+1021.49L1166.66+1021.49L1358.95+1470.3L1551.99+1021.49Z" opacity="1" fill="#b2b0b0"/>
+</g>
+</svg>

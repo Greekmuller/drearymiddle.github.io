@@ -18,7 +18,7 @@ defaults:
     values:
       layout: "default"
 
-permalink: /:categories/:year/:month/:title.html
+permalink: /:year/:month/:title.html
 
 # Useable plugins
 plugins:
@@ -26,6 +26,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-avatar
+  - jekyll-admin
 
 # SEO Tag settings
 title: Dreary Middle

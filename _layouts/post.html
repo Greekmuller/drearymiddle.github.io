@@ -9,7 +9,7 @@ layout: default
     {% if authorCount == 0 %}
         No author
     {% elsif authorCount == 1 %}
-    {{ page.authors | first }}
+    <a href="/authors/{{ page.authors | first }}">{{ page.authors | first }}</a>
         {% else %}
             {% for author in page.authors %}
                 {% if forloop.first %}

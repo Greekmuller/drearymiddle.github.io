@@ -3,7 +3,11 @@ title: 'To boldly go where many blogs have gone before: A Star Trek series analy
   (Part 1)'
 layout: post
 categories:
+- Articles
+tags: 
 - Star Trek
+- Films
+- TNG
 authors:
 - Hysteria103
 ---

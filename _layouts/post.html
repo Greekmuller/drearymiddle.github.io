@@ -20,6 +20,38 @@ layout: default
                     , <a href="/authors/{{ author }}">{{ author }}</a>
         {% endif %}
     {% endfor %}
+{% endif %} | Categorised as: 
+{% assign categoryCount = page.categories | size %}
+    {% if categoryCount == 0 %}
+        Nothing
+    {% elsif categoryCount == 1 %}
+    <a href="/category/{{ page.categories | first }}">{{ page.categories | first }}</a>
+        {% else %}
+            {% for author in page.categories %}
+                {% if forloop.first %}
+                    <a href="/category/{{ author }}">{{ author }}</a>
+                {% elsif forloop.last %}
+                    and <a href="/category/{{ author }}">{{ author }}</a>
+                {% else %}
+                    , <a href="/category/{{ author }}">{{ author }}</a>
+        {% endif %}
+    {% endfor %}
+{% endif %} | Tagged with:
+{% assign tagCount = page.tags | size %}
+    {% if tagCount == 0 %}
+        No tags
+    {% elsif tagCount == 1 %}
+    <a href="/tag/#{{ page.tags | first }}">{{ page.tags | first }}</a>
+        {% else %}
+            {% for author in page.tags %}
+                {% if forloop.first %}
+                    <a href="/tag/#{{ author }}">{{ author }}</a>
+                {% elsif forloop.last %}
+                    and <a href="/tag/#{{ author }}">{{ author }}</a>
+                {% else %}
+                    , <a href="/tag/#{{ author }}">{{ author }}</a>
+        {% endif %}
+    {% endfor %}
 {% endif %}
 </p>
 

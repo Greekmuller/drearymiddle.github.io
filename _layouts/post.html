@@ -27,13 +27,13 @@ layout: default
     {% elsif categoryCount == 1 %}
     <a href="/category/{{ page.categories | first }}">{{ page.categories | first }}</a>
         {% else %}
-            {% for author in page.categories %}
+            {% for category in page.categories %}
                 {% if forloop.first %}
-                    <a href="/category/{{ author }}">{{ author }}</a>
+                    <a href="/category/{{ category }}">{{ category }}</a>
                 {% elsif forloop.last %}
-                    and <a href="/category/{{ author }}">{{ author }}</a>
+                    and <a href="/category/{{ category }}">{{ category }}</a>
                 {% else %}
-                    , <a href="/category/{{ author }}">{{ author }}</a>
+                    , <a href="/category/{{ category }}">{{ category }}</a>
         {% endif %}
     {% endfor %}
 {% endif %} | Tagged with:
@@ -43,13 +43,13 @@ layout: default
     {% elsif tagCount == 1 %}
     <a href="/tag/#{{ page.tags | first }}">{{ page.tags | first }}</a>
         {% else %}
-            {% for author in page.tags %}
+            {% for tag in page.tags %}
                 {% if forloop.first %}
-                    <a href="/tag/#{{ author }}">{{ author }}</a>
+                    <a href="/tag/#{{ tag }}">{{ tag }}</a>
                 {% elsif forloop.last %}
-                    and <a href="/tag/#{{ author }}">{{ author }}</a>
+                    and <a href="/tag/#{{ tag }}">{{ tag }}</a>
                 {% else %}
-                    , <a href="/tag/#{{ author }}">{{ author }}</a>
+                    , <a href="/tag/#{{ tag }}">{{ tag }}</a>
         {% endif %}
     {% endfor %}
 {% endif %}

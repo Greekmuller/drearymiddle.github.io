@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<div class="hero-image" style="background-image: url({{ page.hero }})">
+    <br><br><br><br><br><br><br><br>
+<div class="hero-text-box">
+<h1 style="color: white; mix-blend-mode: overlay;">{{ page.title }}</h1>
 
 <p>
   {{ page.date | date_to_string }} | Written by: 
@@ -54,5 +57,7 @@ layout: default
     {% endfor %}
 {% endif %}
 </p>
+</div>
+</div>
 
 {{ content }}

@@ -2,7 +2,7 @@
 short_name: jrmswell
 name: jrmswell
 position: Podcast Editor
-avatar: /assets/images/avatars/jrmswell.jpg
+avatar: /assets/images/avatars/jrmswell.png
 ---
 <a class="twitter-follow-button" data-dnt="true" data-show-count="false" data-size="large" href="https://twitter.com/jrmswell?ref_src=twsrc%5Etfw">Follow @jrmswell</a><script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
 

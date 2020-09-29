@@ -1,7 +1,8 @@
 ---
-title: 'To boldly go where many blogs have gone before: A Star Trek series analysis.
+title: 'To boldly go where many blogs have gone before: A Star Trek series analysis
   (Part 1)'
 layout: post
+hero: "/assets/images/posts/EnterpriseDjpg.jpg"
 categories:
 - Articles
 tags: 
@@ -13,9 +14,6 @@ authors:
 ---
 
 I have seen many Sci-Fi shows, but there is something special about Star Trek that makes it stand out among the rest.
-
-<div style="text-align:center"><img src="/assets/images/posts/EnterpriseDjpg.jpg" width="50%"></div>
-<div align="center">Image ©CBS Television Distribution</div>
 
 Yes, Star Trek is quite the franchise. Spanning currently 7 different series, 13 movies and hundreds of episodes, you can't complain about lack of content. I feel recently Star Trek has had a weirdly negative wrap to it. I know that sounds weird defending one of the most profitable franchises in the history of Television and one of the Father's of Sci-Fi, but hear me out. I think that people have forgotten how great Star Trek truly is, there is this misconception that it's just a silly Sci-Fi show for nerds and....while yes that may be true it is also so much more than that. Star Trek is an incredibly well written franchise, containing some of the best episodes of a series I have ever seen, even managing to hold up against the best shows that we have today. Writing wise a lot of Star Trek has aged like a fine wine, managing to still be relevant despite some series being decades old. 
 

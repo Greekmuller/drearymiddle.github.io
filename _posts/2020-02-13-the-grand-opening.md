@@ -1,20 +1,18 @@
 ---
 title: The Grand Opening
 layout: post
+hero: "/assets/images/posts/Intro.png"
 categories:
 - Site
 authors:
 - Hysteria103
 - jrmswell
 ---
-
 Hi all and welcome to the grand opening of THE DREARY MIDDLE! Yay! So what is this website all about I hear you ask? Well, let me tell you all about it.
 
 This site is going to be the place where all the members of The Dreary Middle come and gather to discuss the finer things in life that take our minds off of what's going on in the world. We'll talk about TV, games, films in a way that nobody else does. We don't care about the popular opinion this is a place for genuine talk only! Plus we mainly will talk about things we like because we don't tend to spend time on things we don't.
 
 So if you're looking for a place for genuine discussions about some of the best entertainment out there, then you've probably come to a good place. Eh, we're not going to oversell ourselves, that's for you guys to judge us on
-
-![The East Midlands](/assets/images/posts/Intro.png){:width="100%"}
 
 ## More on The Dreary Middle
 The Dreary Middle is a collaboration between a few friends that met at University in the East Midlands™. This is what drew the inspiration for the name as we all found the Midlands to be a little, well, dreary. Nothing against the place but concrete clearly is in fashion here.

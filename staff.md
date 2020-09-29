@@ -7,8 +7,8 @@ title: Staff
 <ul>
   {% for author in site.authors %}
     <br>
-    <div class="avatar"><img src="{{ author.avatar }}" height="100px" style="float: left; margin-right:30px; margin-bottom:20px;"></div>
-    <div class="avatarBG"><img src="{{ author.avatar }}" height="105px" style="float: left;"></div>
+    <div class="avatar"><img src="{{ author.avatar }}" width="100px" style="float: left; margin-right:30px; margin-bottom:20px;"></div>
+    <div class="avatarBG"><img src="{{ author.avatar }}" width="105px" style="float: left;"></div>
     <h2><a href="{{ author.url }}" style="text-decoration: none; color: #959494;">{{ author.name }}</a></h2>  
     <h3>{{ author.position }}</h3>
     <p>{{ author.content | markdownify }}</p>

@@ -25,15 +25,15 @@ layout: default
     {% if categoryCount == 0 %}
         Nothing
     {% elsif categoryCount == 1 %}
-    <a href="/category/{{ page.categories | first }}">{{ page.categories | first }}</a>
+    <a href="/category/{{ page.categories | first  | downcase }}">{{ page.categories | first }}</a>
         {% else %}
             {% for category in page.categories %}
                 {% if forloop.first %}
-                    <a href="/category/{{ category }}">{{ category }}</a>
+                    <a href="/category/{{ category | downcase }}">{{ category }}</a>
                 {% elsif forloop.last %}
-                    and <a href="/category/{{ category }}">{{ category }}</a>
+                    and <a href="/category/{{ category | downcase }}">{{ category }}</a>
                 {% else %}
-                    , <a href="/category/{{ category }}">{{ category }}</a>
+                    , <a href="/category/{{ category | downcase }}">{{ category }}</a>
         {% endif %}
     {% endfor %}
 {% endif %} | Tagged with:
@@ -47,9 +47,9 @@ layout: default
                 {% if forloop.first %}
                     <a href="/tag/#{{ tag }}">{{ tag }}</a>
                 {% elsif forloop.last %}
-                    and <a href="/tag/#{{ tag }}">{{ tag }}</a>
+                    and <a href="/tag/#{{ tag  }}">{{ tag }}</a>
                 {% else %}
-                    , <a href="/tag/#{{ tag }}">{{ tag }}</a>
+                    , <a href="/tag/#{{ tag  }}">{{ tag }}</a>
         {% endif %}
     {% endfor %}
 {% endif %}

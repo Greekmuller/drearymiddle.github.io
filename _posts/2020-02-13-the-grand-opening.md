@@ -2,7 +2,7 @@
 title: The Grand Opening
 layout: post
 categories:
-- Site News
+- Site
 authors:
 - Hysteria103
 - jrmswell

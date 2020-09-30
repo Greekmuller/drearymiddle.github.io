@@ -28,7 +28,6 @@ a {
     background-size: cover;
     background-position: center; 
     width: 100%;
-    margin: -8px;
 }
 
 .hero-text-box {
@@ -37,10 +36,8 @@ a {
     padding-right: 50px;
     padding-bottom: 5px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-
     -webkit-mask-image: linear-gradient(to top, white 70%, transparent 100%);
     mask-image: linear-gradient(to top, white 70%, transparent 100%);
-
     -webkit-backdrop-filter: blur(20px);
     -o-backdrop-filter: blur(20px);
     -ms-backdrop-filter: blur(20px);
@@ -79,7 +76,7 @@ a {
     padding-right: 200px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .top-container {
         padding: 5px;
     }

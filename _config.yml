@@ -24,6 +24,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/brand/dm.png
 
 permalink: /:year/:month/:title.html
 
@@ -41,6 +45,9 @@ tagline: Genuine discussion about our favourite things
 description: Genuine discussion about our favourite things! Movies, Television and occasionally games, come for real discussions on some of the hottest topics on the internet
 url: http://drearymiddle.com
 logo: /assets/images/branding/dm.png
+twitter:
+  username: drearymiddle
+  card: summary
 social:
   links:
     - https://twitter.com/drearymiddle

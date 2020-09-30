@@ -1,7 +1,7 @@
 ---
 title: The Grand Opening
 layout: post
-hero: "/assets/images/posts/Intro.png"
+image: "/assets/images/posts/Intro.png"
 categories:
 - Site
 authors:

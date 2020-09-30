@@ -2,7 +2,7 @@
 title: 'To boldly go where many blogs have gone before: A Star Trek series analysis
   (Part 1)'
 layout: post
-hero: "/assets/images/posts/EnterpriseDjpg.jpg"
+image: "/assets/images/posts/EnterpriseDjpg.jpg"
 categories:
 - Articles
 tags: 

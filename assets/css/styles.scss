@@ -33,9 +33,9 @@ table.center {
 
 .heroImage{
     background-image: url("/assets/images/posts/Intro.png");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     width: 100%;
 }
 

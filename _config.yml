@@ -29,7 +29,9 @@ defaults:
     values:
       image: /assets/images/brand/dm.png
 
-permalink: /:year/:month/:title.html
+permalink: '/:year/:month/:title.html'
+
+issues_repo: drearymiddle/drearymiddle.github.io
 
 # Useable plugins
 plugins:

@@ -1,0 +1,101 @@
+---
+layout: default
+---
+<div class="podcastHeader">
+    <div class="avatar"><img src="{{ page.image }}" class="podcastThumbnail" width="50%" style="display: block; margin-left: auto; margin-right: auto;"></div>
+    <div class="podcastHeaderTextBox">
+        <audio controls="" style="float: right; width: 100%"><source src="{{ page.audio }}" type="audio/mp3"></audio>
+            <br><br>
+        </div>
+    </div>
+    <h1>{{ page.title }}</h1>
+    <p>
+        {{ page.date | date_to_string }} | Starring: 
+        {% assign authorCount = page.authors | size %}
+        {% if authorCount == 0 %}
+        No author
+        {% elsif authorCount == 1 %}
+        <a href="/authors/{{ page.authors | first }}">{{ page.authors | first }}</a>
+        {% else %}
+        {% for author in page.authors %}
+        {% if forloop.first %}
+        <a href="/authors/{{ author }}">{{ author }}</a>
+        {% elsif forloop.last %}
+        and <a href="/authors/{{ author }}">{{ author }}</a>
+        {% else %}
+        , <a href="/authors/{{ author }}">{{ author }}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %} | Categorised as: 
+        {% assign categoryCount = page.categories | size %}
+        {% if categoryCount == 0 %}
+        Nothing
+        {% elsif categoryCount == 1 %}
+        <a href="/category/{{ page.categories | first | downcase }}">{{ page.categories | first }}</a>
+        {% else %}
+        {% for category in page.categories %}
+        {% if forloop.first %}
+        <a href="/category/{{ category | downcase }}">{{ category }}</a>
+        {% elsif forloop.last %}
+        and <a href="/category/{{ category | downcase }}">{{ category }}</a>
+        {% else %}
+        , <a href="/category/{{ category | downcase }}">{{ category }}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %} | Tagged with:
+        {% assign tagCount = page.tags | size %}
+        {% if tagCount == 0 %}
+        No tags
+        {% elsif tagCount == 1 %}
+        <a href="/tag/#{{ page.tags | first }}">{{ page.tags | first }}</a>
+        {% else %}
+        {% for tag in page.tags %}
+        {% if forloop.first %}
+        <a href="/tag/#{{ tag }}">{{ tag }}</a>
+        {% elsif forloop.last %}
+        and <a href="/tag/#{{ tag }}">{{ tag }}</a>
+        {% else %}
+        , <a href="/tag/#{{ tag }}">{{ tag }}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+    </p>
+    
+    Download on:
+    <br>
+    <a href="{{ page.iTunesLink }}" target="_blank"><img src="/assets/images/share/applePodcasts.svg" style="height: 30px;"></a> <a href="{{ page.spotifyLink }}" target="_blank"><img src="/assets/images/share/spotify.svg" style="height: 30px;"></a> <a href="{{ page.googlePodcastsLink}}" target="_blank"><img src="/assets/images/share/googlePodcasts.svg" style="height: 30px;"></a> <a href="{{ page.pocketCastsLink }}" target="_blank"><img src="/assets/images/share/pocketCasts.svg" style="height: 30px;"></a> <a href="{{ page.breakerLink }}" target="_blank"><img src="/assets/images/share/breaker.svg" style="height: 30px;"></a> <a href="http://www.subscribeonandroid.com/pcr.apple.com/id1499022171" title="Subscribe on Android" target="_blank"><img src="https://assets.blubrry.com/soa/BadgeLarge.png" alt="Subscribe on Android" style="border:0; height: 30px;" /></a>
+    
+    {{ content }}
+    <br>
+    
+    <div class="social">
+        <h1>Send to your friends!</h1>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://drearymiddle.com{{ page.url }}" target="_blank"><img src="/assets/images/share/fb.svg" height="50px"></a> <a href="https://twitter.com/intent/tweet?url=http://drearymiddle.com{{ page.url }}" target="blank_"><img src="/assets/images/share/twitter.svg" height="50px"></a> <a href="http://www.reddit.com/submit?url=http://drearymiddle.com{{ page.url }}" target="blank_"><img src="/assets/images/share/reddit.png" height="50px"></a> <a href="http://www.tumblr.com/share/link?url=http://drearymiddle.com{{ page.url }}" target="blank_"><img src="/assets/images/share/tumblr.svg" height="50px"></a> <img src="/assets/images/share/shareSheet.svg" height="50px" type="button" class="shareSheet" abbr title="Might not work on some browsers, should summon the share sheet to bring up all the apps installed on your device that you may share to">
+    </div>
+    
+    {% if page.comments_id %}
+    {% include comments.html issue_id=page.comments_id %}
+    {% endif %}
+    
+    <br>
+    
+    <script>
+        const shareBtn = document.querySelector('.shareSheet');
+        
+        shareBtn.addEventListener('click', () => {
+            if (navigator.share) {
+                navigator.share({
+                    title: '{{ post.title }}',
+                    text: '{{ post.excerpt }}',
+                    url: window.location.href
+                }).then(() => {
+                    console.log('Sharing complete');
+                })
+                .catch(err => {
+                    console.log(`Share failed: `, err.message);
+                });
+            } else {
+                console.log('Your browser does not support the web share api');
+            }
+        });
+    </script>

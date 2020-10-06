@@ -1,8 +1,8 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
+- name: Posts
+  link: /posts
+- name: Podcast
+  link: /category/podcast
 - name: Staff
-  link: /staff.html
+  link: /staff

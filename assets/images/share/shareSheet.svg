@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 2000 2000">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="New" value="1"/>
+</metadata>
+<defs/>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<path d="M9.95148+1004.21C9.95148+454.672+455.439+9.18392+1004.98+9.18392C1554.51+9.18392+2000+454.672+2000+1004.21C2000+1553.74+1554.51+1999.23+1004.98+1999.23C455.439+1999.23+9.95148+1553.74+9.95148+1004.21Z" opacity="1" fill="#959494"/>
+</g>
+<g id="Layer 2" vectornator:layerName="Layer 2">
+<path stroke="#ffffff" stroke-width="50.97" d="M1000+451.217L1145.97+746.98L1472.36+794.408L1236.18+1024.63L1291.94+1349.7L1000+1196.22L708.065+1349.7L763.819+1024.63L527.638+794.408L854.032+746.98L1000+451.217Z" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path d="M846.54+637.402L1153.46+637.402L1153.46+719.637L846.54+719.637L846.54+637.402Z" opacity="1" fill="#959494"/>
+<path stroke="#ffffff" stroke-width="50.33" d="M443.543+719.788L1556.46+719.788L1556.46+1365.63L443.543+1365.63L443.543+719.788Z" fill="#959494" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</svg>

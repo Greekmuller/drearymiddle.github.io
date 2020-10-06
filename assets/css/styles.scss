@@ -22,15 +22,25 @@ a {
     color: #fd0000
 }
 
-.hero-image{
+table, th, td {
+    border: 2px solid #959494;
+  }
+    
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.heroImage{
     background-image: url("/assets/images/posts/Intro.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    background-attachment: fixed;
     width: 100%;
 }
 
-.hero-text-box {
+.heroTextBox {
     padding-top: 100px;
     padding-left: 50px;
     padding-right: 50px;
@@ -44,20 +54,36 @@ a {
     backdrop-filter: blur(20px);
 }
 
+.podcastHeader {
+    background: linear-gradient(to top, #ff85c7, #fff);
+    width: 100%;
+}
+
+.podcastHeaderTextBox {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+}
+
+.podcastThumbnail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .top-container {
     margin: -8px;
     padding-left: 100px;
     overflow: hidden;
     background: linear-gradient(-45deg, #fd0000 20%, #ffd200 20%);
-  }
+}
 
 .bottom-container {
     margin: -8px;
     padding-left: 100px;
     overflow: hidden;
-    background: linear-gradient(-45deg, #ffd200 20%, #fd0000 20%);
+    background: linear-gradient(-45deg, #fd0000 80%, #ffd200 80%);
 }
-  
+
 .header {
     z-index:1000;
     margin: -8px;
@@ -76,7 +102,7 @@ a {
     padding-right: 200px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .top-container {
         padding: 5px;
     }
@@ -85,6 +111,9 @@ a {
     }
     .content {
         padding: 5px;
+    }
+    .flexContainer {
+        justify-content: center
     }
 }
 
@@ -109,4 +138,61 @@ a {
     opacity: 1;
     z-index: 1;
     filter: blur(15px);
+}
+
+.social {
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #ddd;
+}
+
+.authorBox {
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);;
+}
+
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    -webkit-animation: ellipsis steps(1000,end) 2000ms infinite;      
+    animation: ellipsis steps(1000,end) 2000ms infinite;
+    content: "\2026";
+    width: 0px;
+}
+
+.blogList {
+    min-height: 175px;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 5px;    
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 50px;    
+    }
+}
+
+.menuButton {
+    background-color: rgba(149, 148, 148, 0.25);
+    border: none;
+    color: black;
+    padding: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px
+}
+
+.flexContainer {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
 }

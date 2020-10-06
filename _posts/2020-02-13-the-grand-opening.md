@@ -1,12 +1,16 @@
 ---
-title: The Grand Opening
+title: 'The Grand Opening'
 layout: post
 image: "/assets/images/posts/Intro.png"
-categories:
-- Site
+date: 2020-02-13T17:53:00Z
 authors:
 - Hysteria103
 - jrmswell
+categories:
+- Site
+tags:
+- META
+comments_id: 12
 ---
 Hi all and welcome to the grand opening of THE DREARY MIDDLE! Yay! So what is this website all about I hear you ask? Well, let me tell you all about it.
 

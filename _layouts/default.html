@@ -1,44 +1,47 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#959494">
-    <link rel="shortcut icon" type="image/png" href="/assets/images/brand/dm.png">
-    <title>{{ page.title }} | {{ site.title | upcase }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    {% feed_meta %}
-    {% seo %}
-    <div class="top-container" id="logoBar">
-      <div id="siteTitle"><a href="/" style="text-decoration: none;"><h1 align: left; abbr title="Dreary Middle COLON The Website">{{ site.title | upcase }}</h1></a></div>
-    </div>
-    <div class="header" id="menuHeader">
-      <p align: center;>{% include navigation.html %}</p>
-    </div>
-  </head>
-  <body>
-    <div class="content">
-      <h1>{{ page_title }}</h1>
-      {{ content }}
-    </div>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#959494">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/brand/dm.png">
+  <title>{{ page.title }} | {{ site.title | upcase }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% feed_meta %}
+  {% seo %}
+  <div class="top-container" id="logoBar">
+    <div id="siteTitle"><a href="/" style="text-decoration: none;"><h1 align: left; abbr title="Dreary Middle COLON The Website">{{ site.title | upcase }}</h1></a></div>
+  </div>
+  <div class="header" id="menuHeader">
+    <div class="flexContainer">
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}"><div class="menuButton">{{ item.name }}</div></a>
+   {% endfor %}
+   </div>
+  </div>
+</head>
+<body>
+  <div class="content">
+    {{ content }}
+  </div>
+  
   <script>
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {stickyHeader()};
     
     var header = document.getElementById("menuHeader");
     var sticky = header.offsetTop;
     
-    function myFunction() {
+    function stickyHeader() {
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
       } else {
         header.classList.remove("sticky");
       }
     }
-    </script>
-  </body>
-  
-  <footer>
-    <div class="bottom-container"><p style="color:white">©{{ site.title | upcase }} MMXX</p></div>
-  </footer>
+  </script>
+</body>
+
+<footer>
+  <div class="bottom-container"><p style="color:white; text-align: end; margin-right: 50px;">©{{ site.title | upcase }} MMXX</p></div>
+</footer>
 </html>

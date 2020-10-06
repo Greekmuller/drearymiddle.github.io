@@ -2,24 +2,131 @@
 layout: default
 title: Home
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium nulla nec nisl tristique, sed pellentesque libero fringilla. Ut maximus, enim et accumsan placerat, nulla orci mollis diam, eget ullamcorper tellus eros sit amet justo. Sed ligula diam, gravida id pulvinar ac, ultricies a ex. Suspendisse fringilla iaculis ante, ut placerat ipsum tristique et. Pellentesque at magna varius, malesuada lacus eget, venenatis augue. Phasellus sollicitudin sit amet ex nec rhoncus. Integer eget metus quis mi ornare venenatis vitae eu justo. Etiam condimentum massa ut odio fermentum ullamcorper. Nulla nec sapien consectetur ligula hendrerit iaculis. Nam mollis augue eget pretium dignissim. Aliquam erat volutpat. Nullam nec lobortis ante. Integer non erat ligula. Maecenas ultricies vehicula neque, sed rutrum nulla mattis et. Ut eget justo lacinia, ullamcorper tortor at, laoreet ante.
+Hi, and welcome to the Dreary Middle, the website where a team of talented* writers bring you articles and podcasts that like to take a look at entertainment and say the things other people are too scared to say...
 
-Nullam vulputate eu odio vitae faucibus. Phasellus placerat sapien eu lorem faucibus, non fermentum felis ornare. Cras libero erat, rhoncus vel ligula a, ullamcorper feugiat mauris. Morbi eget nisl et lacus varius bibendum. Aliquam at mauris quis elit viverra pulvinar. Sed dui tortor, elementum non aliquet quis, interdum quis tortor. Aenean fringilla congue ante id malesuada. Maecenas pharetra iaculis lorem. Ut suscipit, ex ut mollis hendrerit, orci sem euismod est, ut porttitor augue quam nec mi. Integer rhoncus pellentesque eleifend. Nulla facilisi. Proin vel neque sollicitudin, sodales augue et, bibendum dolor. Cras non interdum dolor, non suscipit libero. Curabitur quis fringilla arcu, sed dignissim sapien. Ut turpis est, semper laoreet sem et, imperdiet efficitur metus.
+While you're here, don't forget to check out the latest episode of our podcast:
+<div class="authorBox">
+<div class="blogList">
+    {% for post in site.categories.Podcast limit:1 %}
+    <br>
+    <a href="{{ post.url }}"><div class="avatar"><img src="{{ post.image }}" width="150px" style="float: left; margin-right:30px; margin-bottom:20px;"></div></a>
+    <div class="avatarBG"><img src="{{ post.image }}" width="155px" style="float: left;"></div>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.date | date_to_string }} | Written by: 
+    {% assign authorCount = post.authors | size %}
+    {% if authorCount == 0 %}
+    No author
+    {% elsif authorCount == 1 %}
+    <a href="/authors/{{ post.authors | first }}">{{ post.authors | first }}</a>
+    {% else %}
+    {% for author in post.authors %}
+    {% if forloop.first %}
+    <a href="/authors/{{ author }}">{{ author }}</a>
+    {% elsif forloop.last %}
+    and <a href="/authors/{{ author }}">{{ author }}</a>
+    {% else %}
+    , <a href="/authors/{{ author }}">{{ author }}</a>
+    {% endif %}
+    {% endfor %}
+    {% endif %} | Categorised as: 
+    {% assign categoryCount = post.categories | size %}
+    {% if categoryCount == 0 %}
+    Nothing
+    {% elsif categoryCount == 1 %}
+    <a href="/category/{{ post.categories | first  | downcase }}">{{ post.categories | first }}</a>
+    {% else %}
+    {% for category in post.categories %}
+    {% if forloop.first %}
+    <a href="/category/{{ category | downcase }}">{{ category }}</a>
+    {% elsif forloop.last %}
+    and <a href="/category/{{ category | downcase }}">{{ category }}</a>
+    {% else %}
+    , <a href="/category/{{ category | downcase }}">{{ category }}</a>
+    {% endif %}
+    {% endfor %}
+    {% endif %} | Tagged with:
+    {% assign tagCount = post.tags | size %}
+    {% if tagCount == 0 %}
+    No tags
+    {% elsif tagCount == 1 %}
+    <a href="/tag/#{{ post.tags | first }}">{{ post.tags | first }}</a>
+    {% else %}
+    {% for tag in post.tags %}
+    {% if forloop.first %}
+    <a href="/tag/#{{ tag }}">{{ tag }}</a>
+    {% elsif forloop.last %}
+    and <a href="/tag/#{{ tag  }}">{{ tag }}</a>
+    {% else %}
+    , <a href="/tag/#{{ tag  }}">{{ tag }}</a>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {{ post.excerpt }}
+{% endfor %}
+</div>
+</div>
 
-In sed nisl hendrerit ligula semper pellentesque sed quis odio. Phasellus ac sodales sapien, a commodo lacus. Etiam nunc sem, pulvinar sit amet interdum id, semper vitae enim. Pellentesque eleifend quam at nisl tincidunt posuere. Mauris eget tempus elit. Proin nunc neque, posuere eget dictum vitae, facilisis nec odio. Mauris id odio ex. Sed metus diam, semper eget accumsan a, euismod consequat ligula. Morbi iaculis nec est faucibus congue. Mauris interdum velit vitae elementum egestas. Suspendisse vitae iaculis massa. Ut suscipit lorem nec elementum placerat. Proin malesuada risus ante, dictum consequat sapien ultricies quis. Aliquam et ligula imperdiet nisl egestas laoreet. Vivamus non elit purus.
+And while you're at it, check out this WACKY article that one of our crack writing team has written!
 
-Ut non lobortis odio. Quisque in mi consequat libero euismod maximus. Etiam tempor, tellus sit amet tempus molestie, enim mi semper ipsum, lobortis pretium mauris nibh a dui. Vivamus eget dignissim ex. Quisque sed ultrices quam, eget porta arcu. Nulla sit amet lacus velit. Vivamus elementum felis et orci fermentum venenatis. Nullam iaculis nibh a ipsum pretium, eget vestibulum dui elementum.
+<div class="authorBox">
+<div class="blogList">
+    {% for post in site.categories.Articles limit:1 %}
+    <br>
+    <a href="{{ post.url }}"><div class="avatar"><img src="{{ post.image }}" width="150px" style="float: left; margin-right:30px; margin-bottom:20px;"></div></a>
+    <div class="avatarBG"><img src="{{ post.image }}" width="155px" style="float: left;"></div>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.date | date_to_string }} | Written by: 
+    {% assign authorCount = post.authors | size %}
+    {% if authorCount == 0 %}
+    No author
+    {% elsif authorCount == 1 %}
+    <a href="/authors/{{ post.authors | first }}">{{ post.authors | first }}</a>
+    {% else %}
+    {% for author in post.authors %}
+    {% if forloop.first %}
+    <a href="/authors/{{ author }}">{{ author }}</a>
+    {% elsif forloop.last %}
+    and <a href="/authors/{{ author }}">{{ author }}</a>
+    {% else %}
+    , <a href="/authors/{{ author }}">{{ author }}</a>
+    {% endif %}
+    {% endfor %}
+    {% endif %} | Categorised as: 
+    {% assign categoryCount = post.categories | size %}
+    {% if categoryCount == 0 %}
+    Nothing
+    {% elsif categoryCount == 1 %}
+    <a href="/category/{{ post.categories | first  | downcase }}">{{ post.categories | first }}</a>
+    {% else %}
+    {% for category in post.categories %}
+    {% if forloop.first %}
+    <a href="/category/{{ category | downcase }}">{{ category }}</a>
+    {% elsif forloop.last %}
+    and <a href="/category/{{ category | downcase }}">{{ category }}</a>
+    {% else %}
+    , <a href="/category/{{ category | downcase }}">{{ category }}</a>
+    {% endif %}
+    {% endfor %}
+    {% endif %} | Tagged with:
+    {% assign tagCount = post.tags | size %}
+    {% if tagCount == 0 %}
+    No tags
+    {% elsif tagCount == 1 %}
+    <a href="/tag/#{{ post.tags | first }}">{{ post.tags | first }}</a>
+    {% else %}
+    {% for tag in post.tags %}
+    {% if forloop.first %}
+    <a href="/tag/#{{ tag }}">{{ tag }}</a>
+    {% elsif forloop.last %}
+    and <a href="/tag/#{{ tag  }}">{{ tag }}</a>
+    {% else %}
+    , <a href="/tag/#{{ tag  }}">{{ tag }}</a>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {{ post.excerpt }}
+{% endfor %}
+</div>
+</div>
 
-
-
-Praesent in metus quis metus tristique pharetra. Donec egestas magna vel nibh egestas dapibus. Duis non lorem massa. Duis lectus dui, blandit et placerat eget, egestas a enim. Sed quis neque sed est efficitur consectetur nec nec turpis. Donec egestas erat eu sem interdum, eu volutpat tellus volutpat. Quisque faucibus fringilla tincidunt. Curabitur cursus rutrum orci eu finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Nullam et turpis ac enim venenatis rutrum sed ut orci. Ut aliquam eros non lacus mattis porttitor. Vivamus sed quam orci. Fusce in orci id diam commodo sollicitudin sit amet at velit. Proin id ipsum diam. Nam ullamcorper nisi scelerisque mi hendrerit, semper volutpat orci interdum. Nulla vel cursus lacus. Vivamus sagittis turpis risus. Sed lobortis suscipit justo, ac ornare purus tristique vitae. Sed porta enim orci, non auctor turpis iaculis non. Curabitur scelerisque orci in dapibus pulvinar. Praesent eu imperdiet lectus, condimentum porttitor libero. Pellentesque mi enim, sodales a convallis nec, gravida et libero. Donec placerat leo justo, eu condimentum nisi dignissim vitae. In laoreet ornare lorem sed condimentum. Vivamus ullamcorper ullamcorper dolor, eget pharetra leo viverra accumsan.
-
-Nulla ullamcorper egestas lectus non vehicula. In hac habitasse platea dictumst. Proin laoreet tempor lacinia. Duis eu urna elit. Nam feugiat tincidunt ex suscipit efficitur. Nunc condimentum arcu non velit pellentesque, non fringilla orci aliquam. Sed tristique massa nunc, aliquet egestas lorem bibendum id. Sed vestibulum, mi aliquet gravida vulputate, justo lorem vulputate justo, vitae tincidunt tortor dolor eu est. Ut bibendum justo nec augue ultricies, eu elementum neque euismod. Mauris a dignissim neque, quis porttitor ligula. Donec a risus ac mauris vulputate mattis sed in odio. Aliquam sodales bibendum ipsum a lacinia. Curabitur rhoncus mauris lacus, quis ultricies elit sodales et. Curabitur at nulla convallis, fringilla diam ac, sagittis est. Integer eu neque ipsum.
-
-Sed sit amet metus in nisl luctus luctus. Etiam massa odio, ultricies et convallis in, blandit non ligula. Pellentesque non neque a sapien laoreet fermentum aliquam in dolor. Proin viverra nulla urna. Pellentesque et justo et dui laoreet luctus id nec ex. Proin condimentum libero eu rutrum dignissim. Curabitur volutpat neque ligula, ut gravida tortor bibendum a. Nulla in aliquet odio. Mauris eu egestas libero. Suspendisse nisl dui, mattis at commodo in, viverra sit amet urna. Duis quis sodales nisl. Aliquam quis augue ut risus sagittis sodales faucibus quis ex. Donec condimentum velit vitae ligula tempus condimentum. Phasellus sed tincidunt dui. Nam lacus dolor, fringilla sed fermentum et, malesuada in magna. Nulla eget odio id eros dictum rutrum.
-
-Integer ultrices sodales nisl, sit amet interdum nunc suscipit ac. Nunc eget nunc dictum metus ultricies viverra vel vitae eros. Phasellus a risus ligula. Ut semper erat ante, id bibendum leo pharetra sed. Cras ultrices dolor arcu, lobortis ultrices urna dignissim sed. Nullam porta, ante a mollis feugiat, nulla nunc semper arcu, vel scelerisque lorem erat a odio. Sed sit amet risus id nibh volutpat rutrum at non justo. Maecenas maximus congue eros a pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam ac elit bibendum, pretium felis at, ornare lectus. Praesent nec eros erat. Proin feugiat ac ante ut porta. Vivamus ut eros lobortis, imperdiet mi nec, mollis dui.
-
-Praesent rhoncus id nisi non ultricies. Maecenas odio magna, feugiat eu euismod id, hendrerit quis quam. Maecenas sed ultricies ipsum, ac dignissim dui. Quisque auctor ligula a varius suscipit. Etiam finibus vestibulum consequat. Cras fringilla enim ac urna hendrerit molestie. Praesent rutrum accumsan quam, eu dictum sem euismod ut.
+All this and more available right here on Dreary Middle!

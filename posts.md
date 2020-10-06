@@ -1,14 +1,17 @@
 ---
 layout: default
-title: Blog
+title: Posts
 ---
 <h1>Latest Posts</h1>
-
-<ul>
+<p>
   {% for post in site.posts %}
-    
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.date | date_to_string }} | Written by: 
+    <hr>
+    <br>
+    <div class="blogList">
+    <a href="{{ post.url }}"><div class="avatar"><img src="{{ post.image }}" width="150px" style="float: left; margin-right:30px; margin-bottom:20px;"></div></a>
+    <div class="avatarBG"><img src="{{ post.image }}" width="155px" style="float: left;"></div>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.date | date_to_string }} | Written by: 
   {% assign authorCount = post.authors | size %}
     {% if authorCount == 0 %}
         No author
@@ -58,6 +61,6 @@ title: Blog
     {% endfor %}
 {% endif %}
       {{ post.excerpt }}
-    <hr>
+      </div>
   {% endfor %}
-</ul>
+</p>

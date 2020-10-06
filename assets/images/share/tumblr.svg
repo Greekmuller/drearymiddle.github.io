@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 156.922 156.808">
+<metadata>
+<vectornator:setting key="DynamicGuides" value="1"/>
+<vectornator:setting key="Units" value="Points"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+</metadata>
+<defs>
+<path d="M0+0L156.922+0L156.922+156.808L0+156.808L0+0Z" id="Mask"/>
+</defs>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<g opacity="1" vectornator:mask="#Mask">
+<clipPath id="ClipPath">
+<use xlink:href="#Mask" fill="none" overflow="visible"/>
+</clipPath>
+<g clip-path="url(#ClipPath)">
+<g opacity="1">
+<path d="M78.5741-0.000396729C35.1381-0.000396729+9.91821e-05+35.1426+9.91821e-05+78.3476C9.91821e-05+121.553+35.1381+156.809+78.5741+156.809C121.779+156.809+156.922+121.553+156.922+78.3476C156.922+34.9116+121.779-0.000396729+78.5741-0.000396729" opacity="1" fill="#001935"/>
+<path d="M84.6562+96.024C84.6562+103.093+88.2242+105.538+93.9052+105.538L101.968+105.538L101.968+123.509L86.7062+123.509C72.9632+123.509+62.7212+116.439+62.7212+99.525L62.7212+72.438L50.2342+72.438L50.2342+57.771C63.9762+54.203+69.7242+42.377+70.3862+32.135L84.6562+32.135L84.6562+55.392L101.305+55.392L101.305+72.438L84.6562+72.438L84.6562+96.024" opacity="1" fill="#ffffff"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -5,7 +5,7 @@ image: /assets/images/brand/dmp.png
 ---
 <div class="avatar"><img src="/assets/images/brand/dmp.svg" style="float: left; margin-right:30px; margin-bottom:20px;" width="115px"></div>
 <div class="avatarBG"><img src="/assets/images/brand/dmp.svg" width="115px" style="float: left;"></div>
-Dreary Middle COLON The Podcast! Genuine discussion about our favourite things! Movies, Television and occasionally games, come for real discussions on some of the hottest topics on the internet as well as expanded long form conversation about written articles posted on the website
+Dreary Middle COLON The Podcast! Genuine discussion about our favourite things! Films, Television and occasionally games, come for real discussions on some of the hottest topics on the internet as well as expanded long form conversation about written articles posted on the website
 
 Download on:
 <br>

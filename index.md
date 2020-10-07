@@ -9,8 +9,8 @@ While you're here, don't forget to check out the latest episode of our podcast:
 <div class="blogList">
     {% for post in site.categories.Podcast limit:1 %}
     <br>
-    <a href="{{ post.url }}"><div class="avatar"><img src="{{ post.image }}" width="150px" style="float: left; margin-right:30px; margin-bottom:20px;"></div></a>
-    <div class="avatarBG"><img src="{{ post.image }}" width="155px" style="float: left;"></div>
+    <a href="{{ post.url }}"><div class="avatar"><img src="{{ post.image }}" class="avatarCrop" style="float: left; margin-right:30px; margin-bottom:20px;"></div></a>
+    <div class="avatarBG"><img src="{{ post.image }}" class="avatarCrop" style="float: left;"></div>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     {{ post.date | date_to_string }} | Written by: 
     {% assign authorCount = post.authors | size %}
@@ -72,8 +72,8 @@ And while you're at it, check out this WACKY article that one of our crack writi
 <div class="blogList">
     {% for post in site.categories.Articles limit:1 %}
     <br>
-    <a href="{{ post.url }}"><div class="avatar"><img src="{{ post.image }}" width="150px" style="float: left; margin-right:30px; margin-bottom:20px;"></div></a>
-    <div class="avatarBG"><img src="{{ post.image }}" width="155px" style="float: left;"></div>
+    <a href="{{ post.url }}"><div class="avatar"><img src="{{ post.image }}" class="avatarCrop" style="float: left; margin-right:30px; margin-bottom:20px;"></div></a>
+    <div class="avatarBG"><img src="{{ post.image }}" class="avatarCrop" style="float: left;"></div>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     {{ post.date | date_to_string }} | Written by: 
     {% assign authorCount = post.authors | size %}

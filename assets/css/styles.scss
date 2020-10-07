@@ -129,6 +129,12 @@ table.center {
     z-index: 2;
 }
 
+.avatarCrop{
+    width: 150px; /* width of container */
+    height: 150px; /* height of container */
+    object-fit: cover;
+}
+
 .avatarBG {
     position: absolute;
     transform: scale(1.05);
